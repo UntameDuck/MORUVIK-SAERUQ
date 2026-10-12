@@ -4,6 +4,8 @@ import os
 import tempfile
 from pathlib import Path
 
+from PIL import Image
+
 
 def digest(path: Path) -> str:
     h = hashlib.sha256()
@@ -32,3 +34,15 @@ def confined(root: Path, relative: str) -> Path:
     if Path(relative).is_absolute() or candidate == root.resolve() or not candidate.is_relative_to(root.resolve()):
         raise ValueError("허용되지 않은 파일 경로입니다.")
     return candidate
+
+
+def atomic_image(path: Path, image: Image.Image) -> None:
+    fd, temporary = tempfile.mkstemp(dir=path.parent, suffix=".tmp")
+    try:
+        with os.fdopen(fd, "wb") as stream:
+            image.save(stream, format="PNG")
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.replace(temporary, path)
+    finally:
+        Path(temporary).unlink(missing_ok=True)

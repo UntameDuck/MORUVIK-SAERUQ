@@ -48,7 +48,17 @@ saeruq evaluate --backend flux --model-path models/flux-klein-4b --manifest data
 
 메모리 여유가 부족하면 --cpu-offload를 명시해 새 실행과 비교한다. 이 버전은 OOM 뒤 자동 해상도 변경·재시도를 하지 않는다. 실패 기록을 보존하고 backend를 언로드한다. 필요하면 해상도 또는 오프로딩 옵션을 변경해 새로운 작업으로 실행한다.
 
-로드 시간에는 모델 파일 무결성 검사와 최초 로딩이 포함된다. 추론 VRAM 지표는 PyTorch allocator의 peak allocated/reserved이며 OS 전체 VRAM이나 시스템 RAM 측정값이 아니다. 별도 시스템 모니터링을 함께 기록한다. evaluate에서 모델은 같은 프로세스 안에 유지되어 첫 작업과 이후 warm 작업을 구분할 수 있다.
+로드 시간에는 모델 파일 무결성 검사와 최초 로딩이 포함된다. load_peak_vram 지표는 로딩 구간, peak_vram 지표는 추론 구간의 PyTorch allocator peak allocated/reserved이며 OS 전체 VRAM이나 시스템 RAM 측정값이 아니다. 별도 시스템 모니터링을 함께 기록한다. cold_load로 최초 로딩과 모델 재사용을 구분한다. evaluate 및 worker에서 모델은 같은 프로세스 안에 유지된다.
+
+대기열을 이용한 실행은 다음과 같다. 입력 경로를 포함하므로 GPU 인스턴스에서 작업을 등록한다.
+
+```bash
+saeruq enqueue --backend flux --prompt "A ceramic vase on a table" --seed 42 --width 1024 --height 1024
+saeruq worker --backend flux --model-path models/flux-klein-4b
+saeruq jobs
+```
+
+GPU당 하나의 queue/worker를 사용한다. worker는 같은 queue의 중복 실행을 막지만 다른 프로그램이나 직접 generate 명령의 GPU 사용은 제한하지 않는다. 긴 실험의 중단 작업은 다음 worker에서 interrupted로 확인하고 필요한 작업만 retry한다.
 
 ## 오프라인 확인
 

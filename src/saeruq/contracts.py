@@ -21,6 +21,10 @@ class CancellationToken:
         if self._event.is_set():
             raise CancelledError("작업이 취소되었습니다.")
 
+    @property
+    def cancelled(self) -> bool:
+        return self._event.is_set()
+
 
 @dataclass(frozen=True)
 class Request:
