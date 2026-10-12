@@ -1,0 +1,461 @@
+{
+  "schema_version": 1,
+  "fixture_notice": "Synthetic fixture, not a representative photographic quality benchmark. Replace/add licensed photos for quality decisions.",
+  "tasks": [
+    {
+      "id": "generate-01",
+      "kind": "generate",
+      "prompt": "A ceramic vase on a wooden table",
+      "seed": 0,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "generate-02",
+      "kind": "generate",
+      "prompt": "숲속의 작은 집, 수채화",
+      "seed": 1,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "generate-03",
+      "kind": "generate",
+      "prompt": "An editorial illustration of a city at dawn",
+      "seed": 2,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "generate-04",
+      "kind": "generate",
+      "prompt": "파란색 로봇 캐릭터, 단순한 배경",
+      "seed": 3,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "generate-05",
+      "kind": "generate",
+      "prompt": "A studio photograph of a glass bottle",
+      "seed": 4,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "generate-06",
+      "kind": "generate",
+      "prompt": "A ceramic vase on a wooden table",
+      "seed": 5,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "generate-07",
+      "kind": "generate",
+      "prompt": "숲속의 작은 집, 수채화",
+      "seed": 6,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "generate-08",
+      "kind": "generate",
+      "prompt": "An editorial illustration of a city at dawn",
+      "seed": 7,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "generate-09",
+      "kind": "generate",
+      "prompt": "파란색 로봇 캐릭터, 단순한 배경",
+      "seed": 8,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "generate-10",
+      "kind": "generate",
+      "prompt": "A studio photograph of a glass bottle",
+      "seed": 9,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "generate-11",
+      "kind": "generate",
+      "prompt": "A ceramic vase on a wooden table",
+      "seed": 10,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "generate-12",
+      "kind": "generate",
+      "prompt": "숲속의 작은 집, 수채화",
+      "seed": 11,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "generate-13",
+      "kind": "generate",
+      "prompt": "An editorial illustration of a city at dawn",
+      "seed": 12,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "generate-14",
+      "kind": "generate",
+      "prompt": "파란색 로봇 캐릭터, 단순한 배경",
+      "seed": 13,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "generate-15",
+      "kind": "generate",
+      "prompt": "A studio photograph of a glass bottle",
+      "seed": 14,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "id": "reference-01",
+      "kind": "edit",
+      "prompt": "이 장면을 연필 드로잉으로 바꿔줘",
+      "source": "source.png",
+      "seed": 0,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "reference-02",
+      "kind": "edit",
+      "prompt": "Reinterpret this scene as a watercolor illustration",
+      "source": "source.png",
+      "seed": 1,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "reference-03",
+      "kind": "edit",
+      "prompt": "이 장면을 연필 드로잉으로 바꿔줘",
+      "source": "source.png",
+      "seed": 2,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "reference-04",
+      "kind": "edit",
+      "prompt": "Reinterpret this scene as a watercolor illustration",
+      "source": "source.png",
+      "seed": 3,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "reference-05",
+      "kind": "edit",
+      "prompt": "이 장면을 연필 드로잉으로 바꿔줘",
+      "source": "source.png",
+      "seed": 4,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "reference-06",
+      "kind": "edit",
+      "prompt": "Reinterpret this scene as a watercolor illustration",
+      "source": "source.png",
+      "seed": 5,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "reference-07",
+      "kind": "edit",
+      "prompt": "이 장면을 연필 드로잉으로 바꿔줘",
+      "source": "source.png",
+      "seed": 6,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "reference-08",
+      "kind": "edit",
+      "prompt": "Reinterpret this scene as a watercolor illustration",
+      "source": "source.png",
+      "seed": 7,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "reference-09",
+      "kind": "edit",
+      "prompt": "이 장면을 연필 드로잉으로 바꿔줘",
+      "source": "source.png",
+      "seed": 8,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "reference-10",
+      "kind": "edit",
+      "prompt": "Reinterpret this scene as a watercolor illustration",
+      "source": "source.png",
+      "seed": 9,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-01",
+      "kind": "edit",
+      "prompt": "주황색 꽃병을 초록색으로 바꾸고 배경은 유지해줘",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "full",
+      "seed": 0,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-02",
+      "kind": "edit",
+      "prompt": "Change the orange vase to a blue vase, keep the background unchanged",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "full",
+      "seed": 1,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-03",
+      "kind": "edit",
+      "prompt": "주황색 꽃병을 초록색으로 바꾸고 배경은 유지해줘",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "full",
+      "seed": 2,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-04",
+      "kind": "edit",
+      "prompt": "Change the orange vase to a blue vase, keep the background unchanged",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "full",
+      "seed": 3,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-05",
+      "kind": "edit",
+      "prompt": "주황색 꽃병을 초록색으로 바꾸고 배경은 유지해줘",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "full",
+      "seed": 4,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-06",
+      "kind": "edit",
+      "prompt": "Change the orange vase to a blue vase, keep the background unchanged",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "full",
+      "seed": 5,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-07",
+      "kind": "edit",
+      "prompt": "주황색 꽃병을 초록색으로 바꾸고 배경은 유지해줘",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "full",
+      "seed": 6,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-08",
+      "kind": "edit",
+      "prompt": "Change the orange vase to a blue vase, keep the background unchanged",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "full",
+      "seed": 7,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-09",
+      "kind": "edit",
+      "prompt": "주황색 꽃병을 초록색으로 바꾸고 배경은 유지해줘",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "crop",
+      "seed": 8,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-10",
+      "kind": "edit",
+      "prompt": "Change the orange vase to a blue vase, keep the background unchanged",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "crop",
+      "seed": 9,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-11",
+      "kind": "edit",
+      "prompt": "주황색 꽃병을 초록색으로 바꾸고 배경은 유지해줘",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "crop",
+      "seed": 10,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-12",
+      "kind": "edit",
+      "prompt": "Change the orange vase to a blue vase, keep the background unchanged",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "crop",
+      "seed": 11,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-13",
+      "kind": "edit",
+      "prompt": "주황색 꽃병을 초록색으로 바꾸고 배경은 유지해줘",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "crop",
+      "seed": 12,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-14",
+      "kind": "edit",
+      "prompt": "Change the orange vase to a blue vase, keep the background unchanged",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "crop",
+      "seed": 13,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "masked-15",
+      "kind": "edit",
+      "prompt": "주황색 꽃병을 초록색으로 바꾸고 배경은 유지해줘",
+      "source": "source.png",
+      "mask": "mask.png",
+      "edit_mode": "crop",
+      "seed": 14,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "repeat-01",
+      "kind": "generate",
+      "prompt": "A ceramic vase on a wooden table",
+      "seed": 42,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "repeat-02",
+      "kind": "generate",
+      "prompt": "A ceramic vase on a wooden table",
+      "seed": 42,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "repeat-03",
+      "kind": "generate",
+      "prompt": "A ceramic vase on a wooden table",
+      "seed": 42,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "repeat-04",
+      "kind": "generate",
+      "prompt": "A ceramic vase on a wooden table",
+      "seed": 42,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "repeat-05",
+      "kind": "generate",
+      "prompt": "A ceramic vase on a wooden table",
+      "seed": 42,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "repeat-06",
+      "kind": "generate",
+      "prompt": "A ceramic vase on a wooden table",
+      "seed": 42,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "repeat-07",
+      "kind": "generate",
+      "prompt": "A ceramic vase on a wooden table",
+      "seed": 42,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "repeat-08",
+      "kind": "generate",
+      "prompt": "A ceramic vase on a wooden table",
+      "seed": 42,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "repeat-09",
+      "kind": "generate",
+      "prompt": "A ceramic vase on a wooden table",
+      "seed": 42,
+      "width": 768,
+      "height": 768
+    },
+    {
+      "id": "repeat-10",
+      "kind": "generate",
+      "prompt": "A ceramic vase on a wooden table",
+      "seed": 42,
+      "width": 768,
+      "height": 768
+    }
+  ]
+}
